@@ -1,0 +1,11 @@
+{
+  "name": "node-crud-api",
+  "version": "1.0.0",
+  "description": "RS School Node.js course task 3: CRUD API",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Izy",
+  "license": "ISC"
+}
