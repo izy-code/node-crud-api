@@ -6,7 +6,7 @@
   "scripts": {
     "start:dev": "nodemon src/index.ts",
     "start:prod": "tsc && node dist/index.js",
-    "start:multi": "cross-env MULTI=true nodemon src/balancer/multi-thread.ts",
+    "start:multi": "cross-env MULTI=true nodemon src/balancer/multi-process.ts",
     "format:check": "prettier --check src/**/*.ts",
     "format:fix": "prettier --write -l src/**/*.ts",
     "lint": "eslint . --ext .ts",
