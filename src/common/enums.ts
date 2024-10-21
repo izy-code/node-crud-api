@@ -19,3 +19,11 @@ export enum ErrorMessage {
   InvalidRequestBody = 'Invalid request body',
   DbMethodNotAllowed = 'Method not allowed, use POST for DB operations',
 }
+
+export enum DbCommands {
+  GET_USERS = 'getUsers',
+  GET_USER = 'getUser',
+  CREATE_USER = 'createUser',
+  UPDATE_USER = 'updateUser',
+  DELETE_USER = 'deleteUser',
+}
