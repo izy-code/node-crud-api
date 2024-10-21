@@ -1,7 +1,7 @@
 import cluster from 'node:cluster';
 import { IncomingMessage, ServerResponse } from 'node:http';
 import { createUser, deleteUser, getUser, getUsers, updateUser } from '../action-manager/user-manager';
-import { delegateToWorker } from '../balancer/delegateToWorker';
+import { delegateToWorker } from '../balancer/delegate-to-worker';
 import { API_PATH } from '../common/constants';
 import { sendNotSupported } from '../utils/utils';
 
