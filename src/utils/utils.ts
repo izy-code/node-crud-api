@@ -10,7 +10,7 @@ export const sendNotSupported = (req: IncomingMessage, res: ServerResponse) => {
 
 export const sendResponse = (res: ServerResponse, statusCode: StatusCode, data: unknown) => {
   res.writeHead(statusCode, { 'Content-Type': 'application/json' });
-  res.write(JSON.stringify(data));
+  res.write(typeof data === 'string' ? data : JSON.stringify(data));
   res.end();
 };
 
